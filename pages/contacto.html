@@ -5,68 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
+    <!--Animacion titulo seccion -- https://animate.style/-- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <title>Contacto</title>
   </head>
   <body>
     <header>
-      
-        <img class="nav__logo" src="../img/logo_topnav.jpg" alt="logo" />
-        <ul class="nav__menu">
-          <li class="nav__item">
-            <a class="nav__link" href="../index.html">Home</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="tratamientos.html"
-              >Tratamientos</a
-            >
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="productos.html">Productos</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="servicios.html">Servicios</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="profesional.html"
-              >Profesional</a
-            >
-          </li>
-        </ul>
-      
+      <img class="nav__logo" src="../img/logo_topnav.jpg" alt="logo" />
+      <ul class="snip1217">
+        <li class="nav__item">
+          <a class="nav__link" href="../index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="tratamientos.html">Tratamientos</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="productos.html">Productos</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="servicios.html">Servicios</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="profesional.html">Profesional</a>
+        </li>
+      </ul>
     </header>
 
-    <h2 class="titulo__seccion">Contacto</h2>
-
-    <div class="contenedor__contacto">
-      <div class="maps">
-        <h3 class="maps__titulo">Nos encontramos en Rosario, te esperamos...</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107134.5456582844!2d-60.696639499999996!3d-32.9522093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539335d7d75b%3A0xec4086e90258a557!2sRosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1660227341486!5m2!1ses!2sar"
-          width="250"
-          height="250"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
+    <div class="container">
+      <div style="text-align: center">
+        <!--Animacion titulo seccion -->
+        <h2 class="animate__animated animate__bounceInLeft titulo__seccion">
+          Contacto
+        </h2>
+        <p>Nos encontramos en Rosario, te esperamos...</p>
       </div>
-
-      <form class="contenedor__form">
-        <label>Nombre</label>
-        <input class="form__input" type="text" placeholder="Ingrese nombre..." />
-
-        <label>Apellido</label>
-        <input class="form__input" type="text" placeholder="Ingrese apellido..." />
-
-        <label>Email</label>
-        <input class="form__input" type="mail" placeholder="Ingrese su mail..." />
-
-        <label>Comentario</label>
-        <input class="form__input__comentario" placeholder="Ingrese su comentario..." />
-
-        <input class="form__btn" type="submit" value="Submit" />
-      </form>
+      <div class="row">
+        <div class="column">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107134.5456582844!2d-60.696639499999996!3d-32.9522093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539335d7d75b%3A0xec4086e90258a557!2sRosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1660227341486!5m2!1ses!2sar"
+            width="100%"
+            height="400px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">Nombre</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="ingrese nombre..."
+            />
+            <label for="lname">Apellido</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="ingrese apellido..."
+            />
+            <label for="country">Ciudad</label>
+            <select id="country" name="ingrese ciudad...">
+              <option value="australia">Rosario</option>
+              <option value="canada">Pueblo Esther</option>
+              <option value="usa">Cañada de Gomez</option>
+            </select>
+            <label for="subject">Comentario</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="ingrese comentario..."
+              style="height: 170px"
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
     </div>
 
     <footer class="footer">
@@ -96,3 +118,4 @@
     </footer>
   </body>
 </html>
+

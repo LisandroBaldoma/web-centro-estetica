@@ -1,28 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
 /*General*/
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 body {
   background-color: #cdc4c4;
-  font-family: sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
 }
 header {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   background-color: rgb(94, 75, 75);
   align-items: center;
-  padding: 10px;
-  justify-content: space-between;
+  text-align: center;
+  justify-content: center;
+}
+.titulo__seccion {
+  font-size: 40px;
+  padding: 10px 10px;
+  text-align: center;
 }
 
 /*Barra de navegcion*/
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
 .snip1217 {
   display: flex;
   list-style: none;
   align-items: flex-end;
-  font-family: 'Raleway', Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
@@ -80,38 +88,6 @@ header {
   height: 80%;
   margin: 40px;
 }
-.titulo__seccion {
-  padding: 10px 10px;
-  text-align: center;
-}
-/*
-.nav__menu {
-  display: flex;
-  list-style: none;
-  align-items: flex-end;
-}
-.nav__item {
-  font-size: 18px;
-}
-.nav__item:hover {
-  font-size: 30px;
-}
-.nav__link {
-  text-decoration: none;
-  color: white;
-  padding: 10px 13px;
-}
-.nav__link:hover {
-  border-radius: 10px;
-  background-color: rgb(113, 61, 61);
-  color: white;
-}
-.nav__logo {
-  border-radius: 50%;
-  height: 80%;
-  margin: 40px;
-}
-*/
 
 /*Footer*/
 .footer {
@@ -181,15 +157,15 @@ header {
 }
 .contenido__profesional_desc {
   text-align: justify;
-  padding: 10px;
+  padding: 30px;
 }
 
 /*Seccion Servicios*/
 .contenido__sercicios {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px 20px 20px 20px;
+  display: flex;  
+  justify-content: space-around;
+  padding-bottom: 20px;
+  
 }
 .servicios__card {
   width: 600px;
@@ -291,75 +267,51 @@ header {
 }
 
 /*Contacto*/
-.contenedor__contacto {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-bottom: 20px;
-  justify-content: space-around;
-}
-.contenedor__form {
-  border-radius: 5px;
-  background-color: rgb(94, 75, 75);
-  padding: 20px;
-  height: 500px;
-  width: 500px;
-}
-.maps {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(94, 75, 75);
-  height: 540px;
-  width: 540px;
-}
-.maps__titulo {
-  text-align: center;
-  margin-top: 0px;
-  padding: 10px;
-  color: white;
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-/*Formulario Contacto*/
-.contenedor__form {
-  height: 500px;
-  width: 500px;
-}
-.form__input {
-  width: 100%;
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
   padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-.contenedor__form label {
-  color: white;
-}
-.form__btn {
-  width: 100%;
-  background-color: #4caf50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
 }
-.form__btn:hover {
+
+input[type=submit]:hover {
   background-color: #45a049;
 }
-.form__input__comentario {
-  width: 100%;
-  padding: 50px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-sizing: border-box;
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
 }
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 
 /*Mediaa Query Vista Ipad BreakPoint 1*/
 @media screen and (max-width: 768px) {
@@ -420,17 +372,11 @@ header {
     grid-template-rows: repeat(7, 1fr);
   }
   /*Seccion Contactos*/
-  .contenedor__contacto {
-    flex-direction: column;
-    align-items: center;
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
   }
-  .contenedor__form {
-    width: 300px;
-  }
-  .maps {
-    width: 340px;
-  }
-
+}
   /*Seccion Servicios*/
   .servicios__card {
     width: 400px;
@@ -452,4 +398,4 @@ header {
     height: 400px;
     width: 400px;
   }
-}
+
