@@ -4,118 +4,192 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--link BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!--LINK STYLE.CSS-->
     <link rel="stylesheet" href="../css/style.css" />
+
     <!--Animacion titulo seccion -- https://animate.style/-- -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
     <title>Servicios</title>
   </head>
-  <body class="body__servivios">
+  <body>
     <header>
-      
-        <img class="nav__logo" src="../img/logo_topnav.jpg" alt="logo" />
-        <ul class="snip1217">
-          <li class="nav__item">
-            <a class="nav__link" href="../index.html">Home</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="tratamientos.html"
-              >Tratamientos</a
-            >
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="productos.html">Productos</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="profesional.html"
-              >Profesional</a
-            >
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
-      
+      <!--NAVBAR-->
+      <nav class="navbar navbar-expand-lg navbar-background">
+        <div class="container-fluid navbar__conteiner">
+          <a class="navbar-brand" href="#"
+            ><img class="navbar-img" src="../img/logo_topnav.jpg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler navbar-boton icono-navbar"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon navbar-icono-spam"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse navbar-ul-personalizado"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ml-auto d-flex navbar-ul-item">
+              <li class="h5 nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="h5 nav-item nav-seccion-size">
+                <a class="nav-link" href="profesional.html">Profesional</a>
+              </li>
+              <li class="h5 nav-item">
+                <a class="nav-link" href="tratamientos.html">Tratamientos</a>
+              </li>
+              <li class="h5 nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="h5 nav-item">
+                <a class="nav-link" href="contacto.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    
-    <h2 class="animate__animated animate__bounceInLeft titulo__seccion">Servicios</h2>
-    
-    <main class="contenido__sercicios">
-      <div class="servicios__card">
-        <img class="servicios__card__img" src="../img/servicios/servicios.jpg" alt="Foto servicio 1">
-            <div class="content">
-            <div class="title">
-              <h3>FLORES DE BACH</h3>
-            </div>
-            <div class="text">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eius aspernatur neque earum dignissimos doloremque doloribus repellendus odio cupiditate nulla, distinctio minima quia rem. Aperiam.
-              </p>
-            </div>
-            <div class="btn-container">
-              <button>Turnos</button>
-            </div>
-          </div>
-      </div>
-      <div class="servicios__card">
-        <img class="servicios__card__img" src="../img/servicios/servicios2.jpg" alt="Foto servicio 2">
-            <div class="content">
-            <div class="title">
-              <h3>ACCES BAR</h3>
-            </div>
-            <div class="text">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eius aspernatur neque earum dignissimos doloremque doloribus repellendus odio cupiditate nulla, distinctio minima quia rem. Aperiam.
-              </p>
-            </div>
-            <div class="btn-container">
-              <button>Turnos</button>
-            </div>
-          </div>
-      </div>
-    </main>       
-    </main>
- 
-    <footer class="footer">
-      <h2 class="footer__titulo">Seguinos en nuestras redes sociales...</h2>
 
-      <div class="footer__contenido">
-        <div class="chip">
+    <!--CONTENIDO SERVICIOS-->
+
+    <h3 class="animate__animated animate__bounceInLeft titulo__seccion">
+      Servicios
+    </h3>
+
+    <div class="container">
+      <div class="row container-servicios">
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="../img/servicios/servicios.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="../img/servicios/servicios2.jpg"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+
+    <div class="container-fluid card text-center container-footer">
+      <div class="header-footer">
+        <h4>Seguinos en nuestras redes sociales...</h4>
+      </div>
+      <div class="row align-items-center footer-iconos">
+        <div class="col">
           <img
+            class="footer__logo"
             src="../img/iconos/facebook.png"
             alt="facebook"
-            
           />
-          <p>Facebook</p>
-          
+          <p class="h6">Facebook</p>
         </div>
-        <div class="chip">
+        <div class="col">
           <img
+            class="footer__logo"
             src="../img/iconos/instagram.png"
-            alt="Instagram"
-            
+            alt="facebook"
           />
-          <p>Instagram</p>
+          <p class="h6">Instagram</p>
         </div>
-        <div class="chip">
+        <div class="col">
           <img
+            class="footer__logo"
             src="../img/iconos/whatsapp.png"
-            alt="WathsApp"
-            
+            alt="facebook"
           />
-          <p>+53-9-3416-567788</p>
+          <p class="h6">+54 9 3416-7898765</p>
         </div>
-        <div class="chip">
+        <div class="col">
           <img
+            class="footer__logo"
             src="../img/iconos/maps.png"
-            alt="Google Maps"
-           
+            alt="facebook"
           />
-         <p>Argentina 2023, Santa Fe</p> 
+          <p class="h6">Monumento a la Bandera 5432</p>
         </div>
       </div>
-    </footer>
+      <figure class="text-center footer-figura">
+        <blockquote class="blockquote">
+          <p class="h4">CENTRO DE ESTETICA NORMA MARTINEZ</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Curso Diseño Web <cite title="Source Title">Bostrap-Coderhouse</cite>
+        </figcaption>
+      </figure>
+    </div>
+
+    <!--script BOOTSTRAP-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

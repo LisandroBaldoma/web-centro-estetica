@@ -4,184 +4,279 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--link BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!--LINK STYLE.CSS-->
     <link rel="stylesheet" href="../css/style.css" />
+
     <!--Animacion titulo seccion -- https://animate.style/-- -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <!--Animacion AOS http://michalsnik.github.io/aos/ -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+        
     <title>Productos</title>
   </head>
   <body>
     <header>
-      <img class="nav__logo" src="../img/logo_topnav.jpg" alt="logo" />
-      <ul class="snip1217">
-        <li class="nav__item">
-          <a class="nav__link" href="../index.html">Home</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="tratamientos.html">Tratamientos</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="profesional.html">Profesional</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="servicios.html">Servicios</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="contacto.html">Contacto</a>
-        </li>
-      </ul>
+      <!--NAVBAR-->
+      <nav class="navbar navbar-expand-lg navbar-background">
+        <div class="container-fluid navbar__conteiner">
+          <a class="navbar-brand" href="#"
+            ><img class="navbar-img" src="../img/logo_topnav.jpg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler navbar-boton icono-navbar"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon navbar-icono-spam"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse navbar-ul-personalizado"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ml-auto d-flex navbar-ul-item">
+              <li class="h5 nav-item ">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="h5 nav-item nav-seccion-size">
+                <a class="nav-link" href="profesional.html">Profesional</a>
+              </li>
+              <li class="h5 nav-item">
+                <a class="nav-link" href="tratamientos.html">Tratamientos</a>
+              </li>
+              <li class="h5 nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="h5 nav-item">
+                <a class="nav-link" href="contacto.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!--Animacion titulo seccion -->
-    <h2 class="animate__animated animate__bounceInLeft titulo__seccion">
+    <h3 class="animate__animated animate__bounceInLeft titulo__seccion">
       Productos
-    </h2>
+    </h3>
 
-    <div class="contenedor__productos">
-      <div
-        class="producto__card"
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-      >
-        <img src="../img/productos/producto1.jpg" alt="Foto producto 1" />
-        <div class="producto__descripcion">
-          <h2>Producto 1</h2>
-          <p>
-            Some text about the jeans. Super slim and comfy lorem ipsum lorem
-            jeansum. Lorem jeamsun denim lorem jeansum.
-          </p>
+    <!--CONTENIDO SECCION PRODUCTOS-->
+
+    <div class="container">
+      <div class="row p-2s">
+        <div class="col-sm-6 col-md-4 col-lg-3 contenido-col">
+          <div class="card">
+            <img
+              src="../img/productos/producto1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Producto 1</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <button class="boton-secciones" type="button">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 contenido-col">
+          <div class="card">
+            <img
+              src="../img/productos/producto2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Producto 2</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <button class="boton-secciones" type="button">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 contenido-col">
+          <div class="card">
+            <img
+              src="../img/productos/producto3.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Producto 3</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <button class="boton-secciones" type="button">Comprar</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 contenido-col">
+          <div class="card">
+            <img
+              src="../img/productos/producto3.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Producto 4</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <button class="boton-secciones" type="button">Comprar</button>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div
-        class="producto__card"
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-      >
-        <img src="../img/productos/producto2.jpg" alt="Foto producto 2" />
-        <div class="producto__descripcion">
-          <h2>Producto 2</h2>
-          <p>
-            Some text about the jeans. Super slim and comfy lorem ipsum lorem
-            jeansum. Lorem jeamsun denim lorem jeansum.
-          </p>
+      <div class="row p-2">
+        <div class="col-sm-6 col-md-4 col-lg-3 contenido-col">
+          <div class="card">
+            <img
+              src="../img/productos/producto1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Producto 5</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <button class="boton-secciones" type="button">Comprar</button>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div
-        class="producto__card"
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-      >
-        <img src="../img/productos/producto3.jpg" alt="Foto producto 3" />
-        <div class="producto__descripcion">
-          <h2>Producto 3</h2>
-          <p>
-            Some text about the jeans. Super slim and comfy lorem ipsum lorem
-            jeansum. Lorem jeamsun denim lorem jeansum.
-          </p>
+        <div class="col-sm-6 col-md-4 col-lg-3 contenido-col">
+          <div class="card">
+            <img
+              src="../img/productos/producto2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Producto 6</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <button class="boton-secciones" type="button">Comprar</button>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div
-        class="producto__card"
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-      >
-        <img src="../img/productos/producto4.jpg" alt="Foto producto 4" />
-        <div class="producto__descripcion">
-          <h2>Producto 4</h2>
-          <p>
-            Some text about the jeans. Super slim and comfy lorem ipsum lorem
-            jeansum. Lorem jeamsun denim lorem jeansum.
-          </p>
+        <div class="col-sm-6 col-md-4 col-lg-3 contenido-col">
+          <div class="card">
+            <img
+              src="../img/productos/producto3.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Producto 7</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <button class="boton-secciones" type="button">Comprar</button>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div
-        class="producto__card"
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-      >
-        <img src="../img/productos/producto5.jpg" alt="Foto producto 5" />
-        <div class="producto__descripcion">
-          <h2>Producto 5</h2>
-          <p>
-            Some text about the jeans. Super slim and comfy lorem ipsum lorem
-            jeansum. Lorem jeamsun denim lorem jeansum.
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="producto__card"
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-      >
-        <img src="../img/productos/producto6.jpg" alt="Foto producto 6" />
-        <div class="producto__descripcion">
-          <h2>Producto 6</h2>
-          <p>
-            Some text about the jeans. Super slim and comfy lorem ipsum lorem
-            jeansum. Lorem jeamsun denim lorem jeansum.
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="producto__card"
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-      >
-        <img src="../img/productos/producto7.jpg" alt="Foto producto 7" />
-        <div class="producto__descripcion">
-          <h2>Producto 7</h2>
-          <p>
-            Some text about the jeans. Super slim and comfy lorem ipsum lorem
-            jeansum. Lorem jeamsun denim lorem jeansum.
-          </p>
+        <div class="col-sm-6 col-md-4 col-lg-3 contenido-col">
+          <div class="card">
+            <img
+              src="../img/productos/producto3.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Producto 8</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+              <button class="boton-secciones" type="button">Comprar</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    
+    <!--FOOTER-->
 
-    <footer class="footer">
-      <h2 class="footer__titulo">Seguinos en nuestras redes sociales...</h2>
-
-      <div class="footer__contenido">
-        <div class="chip">
-          <img src="../img/iconos/facebook.png" alt="facebook" />
-          <p>Facebook</p>
+    <div class="container-fluid card text-center container-footer">
+      <div class="header-footer">
+        <h4>Seguinos en nuestras redes sociales...</h4>
+      </div>
+      <div class="row align-items-center footer-iconos">
+        <div class="col">
+          <img
+            class="footer__logo"
+            src="../img/iconos/facebook.png"
+            alt="facebook"
+          />
+          <p class="h6">Facebook</p>
         </div>
-        <div class="chip">
-          <img src="../img/iconos/instagram.png" alt="Instagram" />
-          <p>Instagram</p>
+        <div class="col">
+          <img
+            class="footer__logo"
+            src="../img/iconos/instagram.png"
+            alt="facebook"
+          />
+          <p class="h6">Instagram</p>
         </div>
-        <div class="chip">
-          <img src="../img/iconos/whatsapp.png" alt="WathsApp" />
-          <p>+53-9-3416-567788</p>
+        <div class="col">
+          <img
+            class="footer__logo"
+            src="../img/iconos/whatsapp.png"
+            alt="facebook"
+          />
+          <p class="h6">+54 9 3416-7898765</p>
         </div>
-        <div class="chip">
-          <img src="../img/iconos/maps.png" alt="Google Maps" />
-          <p>Argentina 2023, Santa Fe</p>
+        <div class="col">
+          <img
+            class="footer__logo"
+            src="../img/iconos/maps.png"
+            alt="facebook"
+          />
+          <p class="h6">Monumento a la Bandera 5432</p>
         </div>
       </div>
-    </footer>
+      <figure class="text-center footer-figura">
+        <blockquote class="blockquote">
+          <p class="h4">CENTRO DE ESTETICA NORMA MARTINEZ</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Curso Diseño Web <cite title="Source Title">Bostrap-Coderhouse</cite>
+        </figcaption>
+      </figure>
+    </div>
+
+    <!--script BOOTSTRAP-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <!--Animacion AOS http://michalsnik.github.io/aos/ -->
-  <script>
-    AOS.init();
-  </script>
 </html>

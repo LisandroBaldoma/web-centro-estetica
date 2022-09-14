@@ -4,65 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- insert css en html -->
+    <!--link BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!--LINK STYLE.CSS-->
     <link rel="stylesheet" href="./css/style.css" />
 
-    <title>HOME</title>
+    <!--Animacion titulo seccion -- https://animate.style/-- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+        
+    <title>Home</title>
   </head>
   <body>
     <header>
-      <img class="nav__logo" src="./img/logo_topnav.jpg" alt="logo" />
-      <ul class="snip1217">
-        <li class="nav__item">
-          <a class="nav__link" href="./pages/profesional.html">Profesional</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="./pages/tratamientos.html">Tratamientos</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="./pages/productos.html">Productos</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="./pages/servicios.html">Servicios</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="./pages/contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </header>
+      <!--NAVBAR-->
+      <nav class="navbar navbar-expand-lg navbar-background">
+        <div class="container-fluid navbar__conteiner">
+          <a class="navbar-brand" href="#"
+            ><img class="navbar-img" src="./img/logo_topnav.jpg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler navbar-boton icono-navbar"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon navbar-icono-spam"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse navbar-ul-personalizado"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ml-auto d-flex navbar-ul-item">
+              <li class="h5 nav-item ">
+                <a class="nav-link" href="./pages/productos.html">Productos</a>
+              </li>
+              <li class="h5 nav-item nav-seccion-size">
+                <a class="nav-link" href="./pages/profesional.html">Profesional</a>
+              </li>
+              <li class="h5 nav-item">
+                <a class="nav-link" href="./pages/tratamientos.html">Tratamientos</a>
+              </li>
+              <li class="h5 nav-item">
+                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+              </li>
+              <li class="h5 nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header> 
+    
+    <!--CONTENIDO-->
+    
+    <div class="card bg-dark text-black">
+      <img src="./img/sectioncontenido.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay ">
+        <div class="card-img-over-personal">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Un lugar donde podes disfrutar de un concepto nuevo y persolizado para
+            cuidar tu imagen, bienestar y salud.</p>
+          <a class="boton-home h6" href="./pages/profesional.html" role="button">Conocenos</a>
+        </div>   
 
-    <section class="contenido__home">
-      <div class="contenido__descripcion">
-        <p>
-          Un lugar donde podes disfrutar de un concepto nuevo y persolizado para
-          cuidar tu imagen, bienestar y salud.
-        </p>
-        <button href="./pages/profesional.html">Conocenos</button>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <h2 class="footer__titulo">Seguinos en nuestras redes sociales...</h2>
-
-      <div class="footer__contenido">
-        <div class="chip">
-          <img src="./img/iconos/facebook.png" alt="facebook" />
-          <p>Facebook</p>
-        </div>
-        <div class="chip">
-          <img src="./img/iconos/instagram.png" alt="Instagram" />
-          <p>Instagram</p>
-        </div>
-        <div class="chip">
-          <img src="./img/iconos/whatsapp.png" alt="WathsApp" />
-          <p>+53-9-3416-567788</p>
-        </div>
-        <div class="chip">
-          <img src="./img/iconos/maps.png" alt="Google Maps" />
-          <p>Argentina 2023, Santa Fe</p>
-        </div>
-      </div>
-    </footer>
+            
+    <!--script BOOTSTRAP-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

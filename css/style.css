@@ -1,152 +1,126 @@
-/*General*/
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-body {
-  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
-  font-family: "Raleway", Arial, sans-serif;
-}
-header {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
+
+/*ESTILOS GENERALES EN SECCIONES*/
+
+/*TITULO SECCIONES*/
 .titulo__seccion {
-  font-size: 40px;
   padding: 10px 10px;
   text-align: center;
 }
-
-/*Barra de navegcion*/
-.snip1217 {
-  display: flex;
-  list-style: none;
-  align-items: flex-end;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 1px;
+/*BUTTON SECCIONES*/
+.boton-secciones {
+  transition-duration: 0.4s;
+  background-color: rgb(240, 229, 229);
+  width: 50%;  
+  padding: 10px 20px;  
+  border-radius: 5px;
+  outline: none;
+  border: none;  
 }
-.snip1217 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-.snip1217 li {
-  display: inline-block;
-  list-style: outside none none;
-  margin: 0.5em 1.5em;
-  padding: 0;
-}
-.snip1217 a {
-  padding: 0.3em 0;
-  color: black;
-  position: relative;
-  text-decoration: none;
-  display: inline-block;
-}
-.snip1217 a:before,
-.snip1217 a:after {
-  height: 3px;
-  position: absolute;
-  content: "";
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-  background-color: red;
-  width: 0;
-}
-.snip1217 a:before {
-  top: 0;
-  left: 0;
-}
-.snip1217 a:after {
-  bottom: 0;
-  right: 0;
-}
-.snip1217 a:hover,
-.snip1217 .current a {
+.boton-secciones:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: rgb(177, 152, 152);
   color: black;
 }
-.snip1217 a:hover:before,
-.snip1217 .current a:before,
-.snip1217 a:hover:after,
-.snip1217 .current a:after {
-  width: 100%;
-}
-.nav__logo {
-  border-radius: 50%;
-  height: auto;
-}
 
-/*Footer*/
-.chip {
-  display: flex;
-  width: max-content;
-  margin: 5px;
-  padding: 0 25px;
-  height: 50px;
-  font-size: 16px;
-  line-height: 50px;
-  border-radius: 25px;
-}
-.chip img {
-  margin: 0 10px 0 -25px;
-  height: 50px;
-  width: 50px;
+/* NAVBAR */
+.navbar-img {
+  width: 200px;
   border-radius: 50%;
 }
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  bottom: 0;
+.navbar-background {
+  background-color: rgb(240, 229, 229);
 }
-.footer__contenido {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-/*CSS SECCIONES*/
-
-/*Home*/
-.contenido__home {
-  width: 100%;
-  background: url("../img/sectioncontenido.jpg");
+.navbar-icono-spam {
+  background-image: url(../img/logo_topnav.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
 }
-.contenido__descripcion {
-  display: flex;
-  flex-direction: column;
-  height: 600px;
-  width: 400px;
-  justify-content: center;
-  align-items: center;
+.navbar-ul-personalizado {
+  justify-content: end;
 }
-.contenido__descripcion p {
-  text-align: center;
-  font-size: 30px;
-}
-.contenido__descripcion button {
-  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
-  border: none;
+.navbar-ul-item a {
   color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+}
+.nav-seccion-size{
+  size:30px;
 }
 
-/*Seccion Profesional*/
+/*FOOTER*/
+.footer__logo {
+  width: 40px;
+  height: 34px;
+  margin: 10px;
+}
+.container-footer{
+  border: 0ch;
+  background-color: rgb(240, 229, 229);
+}
+.header-footer{
+  background-color: rgb(218, 191, 191);
+  height: 40px;  
+}
+.footer-figura{
+  background-color: rgb(218, 191, 191);
+}
+.footer-titulo{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;  
+}
+.container-carrusel{
+  margin-bottom: 30px;
+}
+
+/*HOME*/
+.boton-home{
+  transition-duration: 0.4s;
+  background-color: rgb(240, 229, 229);
+  width: 200px;  
+  padding: 10px 20px;  
+  border-radius: 5px;
+  outline: none;
+  border: none;    
+}
+.boton-home:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: rgb(177, 152, 152);
+  color: black;
+}
+.card-img-over-personal{
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-img-over-personal a {
+  color: black;
+  text-decoration: none;
+}
+
+/*SECCION PRODUCTOS*/
+.contenido-col{
+  margin-top:  10px;
+}
+.card-productos-butoon{
+  background-color: rgb(240, 229, 229);
+}
+
+/*SECCION CONTACTOS*/
+.container-contacto{
+  align-items: center;
+}
+.container-form-contacto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-button1{
+  background-color: rgb(240, 229, 229);
+  width: 200px;
+}
+
+/*SECCION PROFESIONAL*/
 .contenido__profesional {
   display: flex;
   align-content: space-between;
@@ -159,274 +133,81 @@ header {
   text-align: justify;
   padding: 30px;
 }
+.conteiner-profesional{
+  margin-bottom: 10px;
+}
 
-/*Seccion Servicios*/
-.contenido__sercicios {
+/*SECCION SERVICIOS*/
+.container-servicios{
   display: flex;
-  justify-content: space-around;
-  padding-bottom: 20px;
 }
-.servicios__card {
-  width: 600px;
-  height: 400px;
-  display: flex;
-  margin: 10px;
-  background-color: white;
-  box-shadow: 0 5px 10px rgb(113, 61, 61);
-  border-radius: 10px;
+
+/*SECCION TRATAMIENTOS*/
+.tratamientos-contenido{
+  margin-bottom: 20px;
 }
-.servicios__card__img {
-  width: 60%;
-  height: 100%;
-  background-size: cover;
+.img-carrusel{
+  height: 700px;
+  width: 700px;
 }
-.content {
-  width: 40%;
-  display: flex;
+
+/*MEDIASQUERY*/
+@media screen and (max-width: 576px){
+.conteiner-profesional{
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
-.title h3 {
-  color: rgb(200, 127, 105);
+/*TRATAMIENTOS-CARRUSEL*/
+.img-carrusel{
+  height: 400px;    
 }
-.text p {
-  color: black;
-  font-size: 15px;
-  text-align: justify;
-  padding: 10px;
-}
-.btn-container button {
-  background-color: rgb(200, 127, 105);
-  padding: 10px 20px;
-  color: antiquewhite;
-  border-radius: 5px;
-  outline: none;
-  border: none;
 }
 
-/*Seccion Tratamientos*/
-.flip-card {
-  background-color: transparent;
-  width: 500px;
-  height: 500px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; 
-}
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; 
-  backface-visibility: hidden;
-}
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-.flip-card-back {
-  display: flex;
+@media screen and (max-width: 400px) {
+  /*FOOTER*/
+.footer-iconos{
   flex-direction: column;
-  justify-content: space-evenly;
-  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
-  color: white;
-  transform: rotateY(180deg);
 }
-.flip-card-img {
-  height: 500px;
-  width: 500px;
-}
-.container__tratamientos {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, auto);
-  gap: 15px;
-  justify-items: center;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.contenedor__productos {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, auto);
-  grid-column-gap: 10px;
-  grid-row-gap: 20px;
-  margin-top: 10px;
-  padding: 10px;
-}
-.producto__card {
-  display: flex;
+/*SECCION CONTACTOS*/
+.container-contacto{
   flex-direction: column;
-  box-shadow: 0 4px 8px 0 rgb(94, 75, 75);
-  width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
 }
-.producto__card img {
-  width: auto;
-  height: auto;
+.container-servicios{
+  flex-direction: column;
 }
-.producto__descripcion p {
-  text-align: justify;
-  margin: 20px;
+.profesional-fotoperfil{
+  width: 215px;
+  height: 255px;  
 }
-.producto__descripcion h2 {
-  margin-top: 10px;
 }
 
-/*Contacto*/
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-input[type="submit"] {
-  background-color: #04aa6d;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-.container {
-  border-radius: 5px;
-  padding: 10px;
-}
-.column {
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
-.row {
-  display: flex;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/*Mediaa Query Vista Ipad BreakPoint 1*/
-@media screen and (max-width: 768px) {
-  /* General */
-  header {
+@media screen and (max-width: 300px) {
+  /*NAVBAR*/
+  .navbar__conteiner{
     flex-direction: column;
   }
-
-  /* Footer */
-  .footer__contenido {
-    flex-direction: column;
-  }
-
-  /*Seccion Poducto*/
-  .contenedor__productos {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-
-  /*Seccion Contactos*/
-  .contenedor__contacto {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  /*Seccion Profesional*/
-  .contenido__profesional {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /*Seccion Servicios*/
-  .contenido__sercicios {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /*Seccion tratamientos*/
-  .flip-card {
-    width: 300px;
-    height: 300px;
-  }
-  .flip-card-img {
-    height: 300px;
-    width: 300px;
+  /*TRATAMIENTOS-CARRUSEL*/
+  .img-carrusel{
+    height: 200px;    
   }
 }
 
-/*Mediaa Query Vista celular BreakPoint 2*/
-@media screen and (max-width: 576px) {
-  /*Barra de navegcion*/
-  .snip1217 {
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 220px) {
+  /*NAVBAR*/
+  .navbar-img {
+    display: none;
   }
-
-  /*Home*/
-  .contenido__descripcion {
-    justify-content: flex-start;
-    width: 100%;
-  }
-  .contenido__descripcion p {
-    font-size: 20px;
-    text-align: center;
-    padding: 10px 10px 10px 10px;
-    margin-left: 20px;
-  }
-
-  /*Seccion Poducto*/
-  .contenedor__productos {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 1fr);
-  }
-
-  /*Seccion Contactos*/
-  .column,
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 0;
-  }
-  .row {
+  .navbar__conteiner {
     flex-direction: column;
   }
+  .profesional-fotoperfil{
+    width: 100px;
+    height: 110px;    
+  }
+  /*FOOTER*/
+  .footer-titulo{
+   font-size: 12px;    
+  }
+  
 
-  /*Seccion Servicios*/
-  .servicios__card {
-    width: 400px;
-    height: 400px;
-  }
-  .servicios__card__img {
-    width: 60%;
-    height: 100%;
-  }
-
-  /*Seccion Tratamientos*/
-  .flip-card {
-    width: 200px;
-    height: 200px;
-  }
-  .flip-card-img {
-    height: 200px;
-    width: 200px;
-  }
 }
