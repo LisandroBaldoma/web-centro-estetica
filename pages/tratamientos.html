@@ -19,6 +19,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!--LIBRERIA ICONOS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <title>Productos</title>
   </head>
@@ -28,7 +33,10 @@
       <nav class="navbar navbar-expand-lg navbar-background">
         <div class="container-fluid navbar__conteiner">
           <a class="navbar-brand" href="#"
-            ><img class="navbar-img" src="../img/logo_topnav.jpg" alt=""
+            ><img
+              class="navbar-img"
+              src="../img/logo_topnav.jpg"
+              alt="Logo barra de navegacion"
           /></a>
           <button
             class="navbar-toggler navbar-boton icono-navbar"
@@ -74,7 +82,7 @@
     </h3>
 
     <!--CARRUSEL-->
-    <div class="container container-carrusel">
+    <div class="tratamientos-contenido">
       <div
         id="carouselExampleControls"
         class="carousel slide"
@@ -83,33 +91,32 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="../img/servicios/servicios.jpg"
-              class="d-block w-100 img-carrusel"
-              alt="..."
+              src="../img/tratamientos/tratamiento1.jpg"
+              class="d-block img-carrusel"
+              alt="Tratamiento 1"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../img/servicios/servicios2.jpg"
-              class="d-block w-100 img-carrusel"
-              alt="..."
+              src="../img/tratamientos/tratamiento2.jpg"
+              class="d-block img-carrusel"
+              alt="Tratamiento 2"
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../img/servicios/servicios3.jpg"
-              class="d-block w-100 img-carrusel"
-              alt="..."
+              src="../img/tratamientos/tratamiento3.jpg"
+              class="d-block img-carrusel"
+              alt="Tratamiento 3"
             />
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="../img/servicios/servicios4.jpg"
-                class="d-block w-100 img-carrusel"
-                alt="..."
-              />
-            </div>
+          <div class="carousel-item">
+            <img
+              src="../img/tratamientos/tratamiento4.jpg"
+              class="d-block img-carrusel"
+              alt="Tratamiento 4"
+            />
+          </div>
         </div>
         <button
           class="carousel-control-prev"
@@ -134,44 +141,28 @@
 
     <!--FOOTER-->
 
-    <div class="container-fluid card text-center container-footer">
-      <div class="header-footer">
-        <h4 class="footer-titulo">Seguinos en nuestras redes sociales...</h4>
+    <div class="container-fluid footer">
+      <div>
+        <h4 class="text-center">Seguinos en nuestras redes sociales...</h4>
       </div>
-      <div class="row align-items-center footer-iconos">
-        <div class="col">
-          <img
-            class="footer__logo"
-            src="../img/iconos/facebook.png"
-            alt="facebook"
-          />
-          <p class="h6">Facebook</p>
-        </div>
-        <div class="col">
-          <img
-            class="footer__logo"
-            src="../img/iconos/instagram.png"
-            alt="facebook"
-          />
-          <p class="h6">Instagram</p>
-        </div>
-        <div class="col">
-          <img
-            class="footer__logo"
-            src="../img/iconos/whatsapp.png"
-            alt="facebook"
-          />
-          <p class="h6">+54 9 3416-7898765</p>
-        </div>
-        <div class="col">
-          <img
-            class="footer__logo"
-            src="../img/iconos/maps.png"
-            alt="facebook"
-          />
-          <p class="h6">Monumento a la Bandera 5432</p>
-        </div>
-      </div>
+      <ul class="wrapper">
+        <li class="icon facebook">
+          <span class="tooltip">Facebook</span>
+          <span><i class="fa fa-facebook-f"></i></span>
+        </li>
+        <li class="icon twitter">
+          <span class="tooltip">Twitter</span>
+          <span><i class="fa fa-twitter"></i></span>
+        </li>
+        <li class="icon instagram">
+          <span class="tooltip">Instagram</span>
+          <span><i class="fa fa-instagram"></i></span>
+        </li>
+        <li class="icon whatsapp">
+          <span class="tooltip">WhatsApp</span>
+          <span><i class="fa fa-whatsapp"></i></span>
+        </li>
+      </ul>
       <figure class="text-center footer-figura">
         <blockquote class="blockquote">
           <p class="h4">CENTRO DE ESTETICA NORMA MARTINEZ</p>
@@ -195,4 +186,3 @@
     ></script>
   </body>
 </html>
-
