@@ -1,0 +1,189 @@
+/*ESTILOS GENERALES EN SECCIONES*/
+@import "./base/_variables.scss";
+@import "./componentes/_home";
+@import "./componentes/_footer";
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600;);
+
+/*TITULO SECCIONES*/
+.titulo__seccion {
+  padding: $margin-pading $margin-pading;
+  text-align: center;
+}
+
+/*BUTTON SECCIONES*/
+.boton-secciones {
+  transition-duration: 0.4s;
+  background-color: $color-principal;
+  width: 50%;
+  padding: $margin-pading $margin-pading;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+
+  &:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background-color: $color-btn-hover;
+    color: black;
+  }
+}
+
+/* NAVBAR */
+.navbar {
+  &-img {
+    width: 200px;
+    border-radius: 50%;
+  }
+  &-background {
+    background-color: $color-principal;
+  }
+  &-icono-spam {
+    background-image: url(../img/logo_topnav.jpg);
+    background-size: cover;
+  }
+  &-ul {
+    &-personalizado {
+      justify-content: end;
+    }
+    &-item a {
+      color: black;
+    }
+  }
+}
+.nav-seccion-size {
+  size: 30px;
+}
+
+/*SECCION PRODUCTOS*/
+.contenido-col {
+  margin-top: $margin-pading;
+}
+.card-productos-butoon {
+  background-color: $color-btn;
+}
+
+/*SECCION CONTACTOS*/
+.container-form-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: $margin-pading;
+}
+.form-button1 {
+  background-color: $color-btn;
+  width: 200px;
+}
+
+/*SECCION PROFESIONAL*/
+.contenido__profesional {
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+
+  &_img {
+    padding: $margin-pading $margin-pading;
+  }
+  &_desc {
+    text-align: justify;
+    padding: $margin-pading;
+  }
+}
+.conteiner-profesional {
+  margin-bottom: $margin-pading;
+}
+
+/*SECCION SERVICIOS*/
+.container-servicios {
+  display: flex;
+}
+
+/*SECCION TRATAMIENTOS*/
+.tratamientos-contenido {
+  margin-bottom: $margin-pading;
+  text-align: -webkit-center;
+  height: 700px;
+  width: 700px;
+}
+
+/*MEDIASQUERY*/
+@media screen and (max-width: 576px) {
+  .conteiner-profesional {
+    flex-direction: column;
+    align-items: center;
+  }
+  /*TRATAMIENTOS-CARRUSEL*/
+  .tratamientos-contenido {
+    height: 400px;
+    width: 400px;
+  }
+  /*HOME*/
+  .snip1573 {
+    max-width: 500px;
+    min-width: 230px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /*SECCION CONTACTOS*/
+  .container-contacto {
+    flex-direction: column;
+  }
+  .container-servicios {
+    flex-direction: column;
+  }
+  .profesional-fotoperfil {
+    width: 215px;
+    height: 255px;
+  }
+  /*TRATAMIENTOS*/
+  .tratamientos-contenido {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  /*NAVBAR*/
+  .navbar__conteiner {
+    flex-direction: column;
+  }
+  /*TRATAMIENTOS-CARRUSEL*/
+  .tratamientos-contenido {
+    height: 150px;
+    width: 150px;
+  }
+  /*FOOTER*/
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  /*HOME*/
+  .snip1573 {
+    max-width: 300px;
+    min-width: 230px;
+  }
+}
+
+@media screen and (max-width: 220px) {
+  /*NAVBAR*/
+  .navbar-img {
+    display: none;
+  }
+  .navbar__conteiner {
+    flex-direction: column;
+  }
+  .profesional-fotoperfil {
+    width: 100px;
+    height: 110px;
+  }
+  /*FOOTER*/
+  .footer-titulo {
+    font-size: 12px;
+  }
+  /*TRATAMIENTOS*/
+  .tratamientos-contenido {
+    height: 90px;
+    width: 90px;
+  }
+}
