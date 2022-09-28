@@ -1,6 +1,45 @@
-/*ESTILOS GENERALES EN SECCIONES*/ /* HOME */
+/*ESTILOS GENERALES EN SECCIONES*/
+/*MAPA CON LOS COLORES DE LOS ICONOS DE LAS REDES SOCIALES QUE USO EN EL FOOTER*/
+/*MIXIN PARA BOTONES*/
+/*BUTTON PRODUCTOS*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600;);
+.boton-secciones {
+  background-color: rgb(240, 229, 229);
+  color: black;
+  border-radius: 5px;
+  padding: 20px 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+}
+.boton-secciones:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(177, 152, 152);
+  color: black;
+}
+
+/*BUTTON CONTACTOS*/
+.boton-contacto {
+  background-color: rgb(240, 229, 229);
+  color: black;
+  border-radius: 5px;
+  padding: 20px 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+}
+.boton-contacto:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(177, 152, 152);
+  color: black;
+}
+
+/* HOME */
 .snip1573 {
   background-color: #000;
   display: inline-block;
@@ -195,26 +234,16 @@
   font-size: 20px;
 }
 
+.fomrulario-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /*TITULO SECCIONES*/
 .titulo__seccion {
   padding: 10px 10px;
   text-align: center;
-}
-
-/*BUTTON SECCIONES*/
-.boton-secciones {
-  transition-duration: 0.4s;
-  background-color: rgb(240, 229, 229);
-  width: 50%;
-  padding: 10px 10px;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-}
-.boton-secciones:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  background-color: rgb(177, 152, 152);
-  color: black;
 }
 
 /* NAVBAR */
@@ -245,21 +274,13 @@
   margin-top: 10px;
 }
 
-.card-productos-butoon {
-  background-color: rgb(240, 229, 229);
-}
-
 /*SECCION CONTACTOS*/
-.container-form-contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.fomrulario-principal {
   margin-bottom: 10px;
 }
 
-.form-button1 {
-  background-color: rgb(240, 229, 229);
-  width: 200px;
+.container-contactos {
+  margin-bottom: 10px;
 }
 
 /*SECCION PROFESIONAL*/

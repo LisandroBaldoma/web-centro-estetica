@@ -1,5 +1,6 @@
 
 /*FOOTER*/
+
 .footer {
     background-color: $color-principal;
   }
@@ -71,28 +72,28 @@
   .wrapper .facebook:hover,
   .wrapper .facebook:hover .tooltip,
   .wrapper .facebook:hover .tooltip::before {
-    background: $color-icono-fb;
-    color: $color-font-icono;
-    font-size: 20px;
+    background: map-get($color-footer-redes, facebook );
+    color: map-get($color-footer-redes, fontcolor);
+    font-size: map-get($color-footer-redes, fontsize);
   }
   .wrapper .twitter:hover,
   .wrapper .twitter:hover .tooltip,
   .wrapper .twitter:hover .tooltip::before {
-    background: $color-icono-tw;
-    color: $color-font-icono;
-    font-size: 20px;
+    background: map-get($color-footer-redes, twiter);
+    color: map-get($color-footer-redes, fontcolor);
+    font-size: map-get($color-footer-redes, fontsize);
   }
   .wrapper .instagram:hover,
   .wrapper .instagram:hover .tooltip,
   .wrapper .instagram:hover .tooltip::before {
-    background: $color-icono-ig;
-    color: $color-font-icono;
-    font-size: 20px;
+    background: map-get($color-footer-redes, instagram);
+    color: map-get($color-footer-redes, fontcolor);
+    font-size: map-get($color-footer-redes, fontsize);
   }
   .wrapper .whatsapp:hover,
   .wrapper .whatsapp:hover .tooltip,
   .wrapper .whatsapp:hover .tooltip::before {
-    background: $color-icono-wap;
-    color: $color-font-icono;
-    font-size: 20px;
+    background: map-get($color-footer-redes, whatsapp);
+    color: map-get($color-footer-redes, fontcolor);
+    font-size: map-get($color-footer-redes, fontsize);
   }

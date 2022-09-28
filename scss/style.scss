@@ -1,32 +1,21 @@
 /*ESTILOS GENERALES EN SECCIONES*/
 @import "./base/_variables.scss";
+@import "./componentes/_btn";
 @import "./componentes/_home";
 @import "./componentes/_footer";
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600;);
 
+%formularios{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /*TITULO SECCIONES*/
 .titulo__seccion {
   padding: $margin-pading $margin-pading;
   text-align: center;
-}
-
-/*BUTTON SECCIONES*/
-.boton-secciones {
-  transition-duration: 0.4s;
-  background-color: $color-principal;
-  width: 50%;
-  padding: $margin-pading $margin-pading;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-
-  &:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-      0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    background-color: $color-btn-hover;
-    color: black;
-  }
 }
 
 /* NAVBAR */
@@ -59,20 +48,17 @@
 .contenido-col {
   margin-top: $margin-pading;
 }
-.card-productos-butoon {
-  background-color: $color-btn;
-}
+
 
 /*SECCION CONTACTOS*/
-.container-form-contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+.fomrulario-principal{  
   margin-bottom: $margin-pading;
+  @extend %formularios;
 }
-.form-button1 {
-  background-color: $color-btn;
-  width: 200px;
+
+.container-contactos{
+  margin-bottom: $margin-pading;
 }
 
 /*SECCION PROFESIONAL*/
