@@ -1,0 +1,134 @@
+/*-------------------TITULO SECCIONES-----------------------------------*/
+.titulo__seccion {
+  padding: $margin-pading $margin-pading;
+  text-align: center;
+}
+
+/*----------------------PROFESIONAL------------------------------------*/
+.container-padre {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.col-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.col-descripcion {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  padding-left: 30px;
+  justify-content: center;
+  gap: 20px;
+  text-align: justify;
+}
+
+/*----------------------SERVICIOS------------------------------------*/
+.card-group-servicios {
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/*---------------TRATAMIENTOS-----------------------------------*/
+.row-carrusel {
+  justify-content: center;
+}
+.col-carrusel {
+  margin-bottom: 20px;
+}
+.img-carrusel {
+  height: 500px;
+}
+
+/*----------------------PRODUCTOS------------------------------------*/
+.row-productos {
+  justify-content: center;
+}
+
+/*----------------------CONTACTOS------------------------------------*/
+%formularios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row-contactos {
+  align-items: center;
+}
+
+.fomrulario-principal {
+  margin-bottom: $margin-pading;
+  @extend %formularios;
+}
+
+.container-contactos {
+  margin-bottom: $margin-pading;
+}
+
+/*------------------------BREAKPOINT--------------------------*/
+
+@media (max-width: 991.98px) {
+  /*--------------------SECCION PROFESIONAL---------------------*/
+  .container-padre {
+    flex-direction: column;
+  }
+  .profesional-fotoperfil {
+    height: 350px;
+    width: 350px;
+  }
+  .col-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .profesional-descripcion1 {
+    text-align: justify;
+    font-size: 20px;
+    padding-top: 10px;
+    margin: 10px;
+  }
+  .profesional-descripcion2 {
+    text-align: justify;
+    font-size: 20px;
+    padding-top: 10px;
+    margin: 10px;
+  }
+  .footer {
+    & p {
+      display: none;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  /*--------------------SECCION PROFESIONAL---------------------*/
+  .profesional-descripcion2 {
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  /*--------------------SECCION PROFESIONAL---------------------*/
+  .footer-figura {
+    display: none;
+  }
+  .container-padre {
+    flex-wrap: wrap;
+  }
+  .profesional-fotoperfil {
+    height: 200px;
+    width: 200px;
+  }
+  /*------------------CONTACTOS-------------------*/
+  .row-contactos {
+    gap: 25px;
+    justify-content: center;
+  }
+}

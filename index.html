@@ -13,7 +13,7 @@
       name="keywords"
       content="Belleza, Estetica, Tratamientos, Facial, Relax, Zen, Meditacion, Dermopigmentacion, Radiofrecuencia, Cursos, Dermaplaning, laminado de cejas, Manicuria, Mujer, Hidratacion, Flores de Bach, Acces Bars, Masajes Relajantes"
     />
-    <!--link BOOTSTRAP-->
+    <!--LINK BOOTSTRAP-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,83 +21,87 @@
       crossorigin="anonymous"
     />
     <!--LINK STYLE.CSS-->
-    <link rel="stylesheet" href="./css/style.css" />
-
+    <link rel="stylesheet" href="./css/style.css"
+     />
     <!--Animacion titulo seccion -- https://animate.style/-- -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
+    <!--Libreria Iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>
       Centro de Estetica || Norma Martinez || Un lugar donde podes disfrutar de
       un concepto nuevo y persolizado para cuidar tu imagen, bienestar y salud
     </title>
   </head>
-  <body>
+  <body class="home-body">
     <header>
-      <!--NAVBAR-->
-      <nav class="navbar navbar-expand-lg navbar-background">
-        <div class="container-fluid navbar__conteiner">
-          <a class="navbar-brand" href="./index.html"
-            ><img
-              class="navbar-img"
-              src="./img/logo_topnav.jpg"
-              alt="Logo barra de navegacion"
-          /></a>
-          <button
-            class="navbar-toggler navbar-boton icono-navbar"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon navbar-icono-spam"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse navbar-ul-personalizado"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav ml-auto d-flex navbar-ul-item">
-              <li class="h5 nav-item">
-                <a class="nav-link" href="./pages/productos.html">Productos</a>
+      <!--CONTENIDO HOME-->
+      <main class="container d-flex flex-column justify-content-center vh-100">
+        <div class="row">
+          <div class="col-12 col-lg-7">
+            <div class="text-center">
+              <img
+                class="home-logo animate__animated animate__zoomIn"
+                src="./img/logo_topnav.jpg"
+                alt=""
+              />
+            </div>
+            <div class="py-4">
+              <h1 class="fw-bold text-center fs-1">CENTRO DE ESTETICA</h1>
+              <h2 class="text-center fs-3">NORMA MARTINEZ</h2>
+            </div>
+
+            <div class="text-center">
+              <h3>
+                Un lugar donde podes disfrutar de un concepto nuevo y
+                persolizado para cuidar tu imagen, bienestar y salud
+              </h3>
+            </div>
+
+            <div class="d-grid text-center py-4">
+              <a
+                class="py-4 home-btn animate__animated animate__shakeY"
+                href="./pages/profesional.html"
+                role="button"
+                >Conocenos
+              </a>
+            </div>
+
+            <div class="container wrapper">
+              <li class="icon facebook">
+                <a class="icon-link" href="https://m.facebook.com/centrodeesteticanormamartinez/">
+                <span class="tooltip">Facebook</span>
+                <span><i class="fa fa-facebook"></i></span>
+              </a>
               </li>
-              <li class="h5 nav-item nav-seccion-size">
-                <a class="nav-link" href="./pages/profesional.html"
-                  >Profesional</a
-                >
+              <li class="icon twitter">
+                <a class="icon-link" href="https://twitter.com/">
+                <span class="tooltip">Twitter</span>
+                <span><i class="fa fa-twitter"></i></span>
+              </a>
               </li>
-              <li class="h5 nav-item">
-                <a class="nav-link" href="./pages/tratamientos.html"
-                  >Tratamientos</a
-                >
+              <li class="icon instagram">
+                <a class="icon-link" href="https://www.instagram.com/centrodeesteticanormamartinez/?hl=es-la">
+                <span class="tooltip">Instagram</span>
+                <span><i class="fa fa-instagram"></i></span>
+              </a>
+              </li>              
+              <li class="icon whatsapp">
+                <a class="icon-link" href="https://web.whatsapp.com/">
+                <span class="tooltip">WhatsApp</span>
+                <span><i class="fa fa-whatsapp"></i></span>
+              </a>
               </li>
-              <li class="h5 nav-item">
-                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
-              </li>
-              <li class="h5 nav-item">
-                <a class="nav-link" href="./pages/contacto.html">Contactos</a>
-              </li>
-            </ul>
+            </div>
           </div>
         </div>
-      </nav>
+      </main>
     </header>
-
-    <!--CONTENIDO HOME-->
-
-    <figure class="snip1573">
-      <img src="./img/sectioncontenido.jpg" alt="sample92" />
-      <figcaption>
-        <h2>
-          Un lugar donde podes disfrutar de un concepto nuevo y persolizado para
-          cuidar tu imagen, bienestar y salud
-        </h2>
-      </figcaption>
-      <a href="./pages/profesional.html"></a>
-    </figure>
 
     <!--script BOOTSTRAP-->
     <script

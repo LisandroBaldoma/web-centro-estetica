@@ -1,20 +1,20 @@
 /*MIXIN PARA BOTONES*/
-@mixin btn($color-fondo, $color-texto, $width) {
-    background-color: $color-fondo;
-    color: $color-texto;
-    border-radius: 5px;
-    padding: 20px 30px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: $width;    
-  }
+@mixin btn($color-fondo, $color-texto) {
+  background-color: $color-fondo;
+  color: $color-texto;
+  border-radius: 5px;
+  padding: 20px 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
 
-  /*BUTTON PRODUCTOS*/
-.boton-secciones{
-  @include btn($color-principal, $color-font-principal, 200px);
-  
+/*BUTTON PRODUCTOS*/
+.boton-secciones {
+  @include btn($color-principal, $color-font-principal);
+
   &:hover {
     box-shadow: $box-shadow;
     background-color: $color-btn-hover;
@@ -22,14 +22,11 @@
   }
 }
 /*BUTTON CONTACTOS*/
-.boton-contacto{
-  @include btn($color-principal, $color-font-principal, 400px);
+.boton-contacto {
+  @include btn($color-principal, $color-font-principal);
   &:hover {
     box-shadow: $box-shadow;
     background-color: $color-btn-hover;
     color: black;
   }
 }
-
-  
-

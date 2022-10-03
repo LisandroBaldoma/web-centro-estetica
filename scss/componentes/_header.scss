@@ -1,0 +1,25 @@
+/*---------------------------NAVBAR----------------------------------- */
+.navbar {
+  &-img {
+    width: 200px;
+    border-radius: 50%;
+  }
+  &-background {
+    background-color: $color-principal;
+  }
+  &-icono-spam {
+    background-image: url(../img/logo_topnav.jpg);
+    background-size: cover;
+  }
+  &-ul {
+    &-personalizado {
+      justify-content: end;
+    }
+    &-item a {
+      color: black;
+    }
+  }
+}
+.nav-seccion-size {
+  size: 30px;
+}

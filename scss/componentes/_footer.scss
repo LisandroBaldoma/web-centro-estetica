@@ -1,28 +1,33 @@
-
-/*FOOTER*/
+/*-------------------FOOTER-------------------------------------*/
 
 .footer {
-    background-color: $color-principal;
+  background-color: $color-principal;
+  position: relative;
+}
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+.icon-link {
+  color: black;
+  &:hover {
+    color: white;
   }
-  
-  *:focus,
-  *:active {
-    outline: none !important;
-    -webkit-tap-highlight-color: transparent;
-  }
-  .wrapper {
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-  
+}
+.wrapper {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+
   & .icon {
     position: relative;
     background: $color-background-icono;
     border-radius: 50%;
     padding: 15px;
     margin: 10px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     font-size: 25px;
     display: flex;
     justify-content: center;
@@ -33,19 +38,19 @@
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 }
-  .wrapper .tooltip {
-    position: absolute;
-    top: 0;
-    font-size: 14px;
-    background: $color-background-icono;
-    color: $color-font-icono;
-    padding: 5px 8px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: $color-background-icono;
+  color: $color-font-icono;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
   &::before {
     position: absolute;
     content: "";
@@ -58,42 +63,42 @@
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 }
-  .wrapper .icon:hover .tooltip {
-    top: -45px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
   & span,
   & .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
   }
 }
-  .wrapper .facebook:hover,
-  .wrapper .facebook:hover .tooltip,
-  .wrapper .facebook:hover .tooltip::before {
-    background: map-get($color-footer-redes, facebook );
-    color: map-get($color-footer-redes, fontcolor);
-    font-size: map-get($color-footer-redes, fontsize);
-  }
-  .wrapper .twitter:hover,
-  .wrapper .twitter:hover .tooltip,
-  .wrapper .twitter:hover .tooltip::before {
-    background: map-get($color-footer-redes, twiter);
-    color: map-get($color-footer-redes, fontcolor);
-    font-size: map-get($color-footer-redes, fontsize);
-  }
-  .wrapper .instagram:hover,
-  .wrapper .instagram:hover .tooltip,
-  .wrapper .instagram:hover .tooltip::before {
-    background: map-get($color-footer-redes, instagram);
-    color: map-get($color-footer-redes, fontcolor);
-    font-size: map-get($color-footer-redes, fontsize);
-  }
-  .wrapper .whatsapp:hover,
-  .wrapper .whatsapp:hover .tooltip,
-  .wrapper .whatsapp:hover .tooltip::before {
-    background: map-get($color-footer-redes, whatsapp);
-    color: map-get($color-footer-redes, fontcolor);
-    font-size: map-get($color-footer-redes, fontsize);
-  }
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: map-get($color-footer-redes, facebook);
+  color: map-get($color-footer-redes, fontcolor);
+  font-size: map-get($color-footer-redes, fontsize);
+}
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: map-get($color-footer-redes, twiter);
+  color: map-get($color-footer-redes, fontcolor);
+  font-size: map-get($color-footer-redes, fontsize);
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: map-get($color-footer-redes, instagram);
+  color: map-get($color-footer-redes, fontcolor);
+  font-size: map-get($color-footer-redes, fontsize);
+}
+.wrapper .whatsapp:hover,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapp:hover .tooltip::before {
+  background: map-get($color-footer-redes, whatsapp);
+  color: map-get($color-footer-redes, fontcolor);
+  font-size: map-get($color-footer-redes, fontsize);
+}
