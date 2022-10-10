@@ -39,10 +39,9 @@
   </head>
   <body>
     <header>
-      <!--NAVBAR-->
       <nav class="navbar navbar-expand-lg navbar-background">
-        <div class="container-fluid navbar__conteiner">
-          <a class="navbar-brand" href="#"
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
             ><img
               class="navbar-img"
               src="../img/logo_topnav.jpg"
@@ -68,13 +67,13 @@
                 <a class="nav-link" href="../index.html">Home</a>
               </li>
               <li class="h5 nav-item nav-seccion-size">
-                <a class="nav-link" href="profesional.html">Profesional</a>
-              </li>
-              <li class="h5 nav-item">
                 <a class="nav-link" href="productos.html">Productos</a>
               </li>
               <li class="h5 nav-item">
                 <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="h5 nav-item">
+                <a class="nav-link" href="profesional.html">Profesional</a>
               </li>
               <li class="h5 nav-item">
                 <a class="nav-link" href="contacto.html">Contactos</a>
@@ -87,139 +86,312 @@
 
     <!--CONTENIDO SECCION TRATAMIENTO-->
 
-    <h1 class="animate__animated animate__bounceInLeft titulo__seccion">
-      Tratamientos
-    </h1>
-
-    <!--CARRUSEL-->
-    <div class="container">
-      <div class="row row-carrusel">
-        <div class="col-10 col-carrusel">
-          <div
-            id="carouselExampleControls"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="../img/tratamientos/tratamiento1.jpg"
-                  class="d-block w-100 img-carrusel"
-                  alt="Tratamiento Antiage con acido Hialuronico"
-                />
+    <section>
+      <h1 class="animate__animated animate__bounceInLeft titulo__seccion">
+        Tratamientos
+      </h1>
+      <!--CARRUSEL-->
+      <div class="container">
+        <div class="row row-carrusel">
+          <div class="col-10 col-carrusel">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="../img/tratamientos/tratamiento1.jpg"
+                    class="d-block w-100 img-carrusel"
+                    alt="Tratamiento Antiage con acido Hialuronico"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../img/tratamientos/tratamiento2.jpg"
+                    class="d-block w-100 img-carrusel"
+                    alt="Dermopigmentacion de cejas"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../img/tratamientos/tratamiento3.jpg"
+                    class="d-block w-100 img-carrusel"
+                    alt="Mesoterapia"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../img/tratamientos/tratamiento4.jpg"
+                    class="d-block w-100 img-carrusel"
+                    alt="Mascarillas"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../img/tratamientos/tratamiento5.jpg"
+                    class="d-block w-100 img-carrusel"
+                    alt="Peeling Glowing Skin"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../img/tratamientos/tratamiento6.jpg"
+                    class="d-block w-100 img-carrusel"
+                    alt="Tratamientos Faciales"
+                  />
+                </div>
               </div>
-              <div class="carousel-item">
-                <img
-                  src="../img/tratamientos/tratamiento2.jpg"
-                  class="d-block w-100 img-carrusel"
-                  alt="Dermopigmentacion de cejas"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="../img/tratamientos/tratamiento3.jpg"
-                  class="d-block w-100 img-carrusel"
-                  alt="Mesoterapia"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="../img/tratamientos/tratamiento4.jpg"
-                  class="d-block w-100 img-carrusel"
-                  alt="Mascarillas"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="../img/tratamientos/tratamiento5.jpg"
-                  class="d-block w-100 img-carrusel"
-                  alt="Peeling Glowing Skin"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="../img/tratamientos/tratamiento6.jpg"
-                  class="d-block w-100 img-carrusel"
-                  alt="Tratamientos Faciales"
-                />
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>    
+    </div>
+    </section>
+    
+    
+    <section>
+      <div class="container py-3">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button
+                class="accordion-button acordion-button-personal fs-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Dermapen
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body">
+                <strong>Combate de forma segura e indolora </strong>las
+                imperfecciones como cicatrices, marcas de acné, arrugas o líneas
+                de expresión y manchas. Es un tratamiento eficaz, y también
+                ideal para combinar con otras técnicas.
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button
+                class="accordion-button collapsed acordion-button-personal fs-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+                Dermopigmentación
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo"
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
+              <div class="accordion-body">
+                <strong>Un procedimiento que: </strong>
+                <ul>
+                  <li>Corrige imperfecciones en el contorno de labios</li>
+                  <li>Resalta los rasgos</li>
+                  <li>Corrige el volumen de labios</li>
+                  <li>Experiencia y excelencia en 20 años.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button
+                class="accordion-button collapsed acordion-button-personal fs-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+                Laminado de Cejas
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingThree"
             >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+              <div class="accordion-body">
+                <strong
+                  >Es un tratamiento estético semipermanente que logra un efecto
+                  de ceja peinada, </strong
+                >fijando el pelo hacia arriba. La técnica no rellena áreas sin
+                pelo, sino que ordena las cejas logrando un rediseño muy
+                favorecedor.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button acordion-button-personal fs-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Peeling Glowing Skin
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Renová tu piel con los mejores productos.</strong> Este
+                peeling puede realizarse durante todo el año. Obtendrás una piel
+                luminosa e hidratada
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button acordion-button-personal fs-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Dermopigmentación
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong
+                  >¿Tus cejas son muy finas, no tiene una forma armónica o
+                  presenta tramos con pocos pelos?</strong
+                >Con la dermopigmentación se logran corregir estos problemas,
+                con un efecto natural y duradero.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button acordion-button-personal fs-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Tratamiento Anti Age
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong
+                  >¡En verano es fundamental mantener la piel hidratada!</strong
+                >Realizamos tu diagnóstico de piel para saber qué tratamientos y
+                productos son los adecuados para vos.
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!--FOOTER-->
 
-    <div class="container-fluid footer">
-      <ul class="wrapper">
-        <li class="icon facebook">
-          <a
-            class="icon-link"
-            href="https://m.facebook.com/centrodeesteticanormamartinez/"
-          >
-            <span class="tooltip">Facebook</span>
-            <span><i class="fa fa-facebook"></i></span>
-          </a>
-        </li>
-        <li class="icon twitter">
-          <a class="icon-link" href="https://twitter.com/">
-            <span class="tooltip">Twitter</span>
-            <span><i class="fa fa-twitter"></i></span>
-          </a>
-        </li>
-        <li class="icon instagram">
-          <a
-            class="icon-link"
-            href="https://www.instagram.com/centrodeesteticanormamartinez/?hl=es-la"
-          >
-            <span class="tooltip">Instagram</span>
-            <span><i class="fa fa-instagram"></i></span>
-          </a>
-        </li>
-        <li class="icon whatsapp">
-          <a
-            class="icon-link"
-            href="https://web.whatsapp.com/"
-          >
-            <span class="tooltip">WhatsApp</span>
-            <span><i class="fa fa-whatsapp"></i></span>
-          </a>
-        </li>
-      </ul>
-      <figure class="text-center footer-figura">
-        <blockquote class="blockquote">
-          <p class="titulo h1">CENTRO DE ESTETICA NORMA MARTINEZ</p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          Curso Diseño Web <cite title="Source Title">Bostrap-Coderhouse</cite>
-        </figcaption>
-      </figure>
-    </div>
+    <footer>
+      <div class="container-fluid text-center footer-container">
+        <ul class="row row-cols-auto wrapper">
+          <li class="col icon facebook">
+            <a
+              class="icon-link"
+              href="https://m.facebook.com/centrodeesteticanormamartinez/"
+            >
+              <span class="tooltip">Facebook</span>
+              <span><i class="fa fa-facebook"></i></span>
+            </a>
+          </li>
+          <li class="col icon twitter">
+            <a class="icon-link" href="https://twitter.com/">
+              <span class="tooltip">Twitter</span>
+              <span><i class="fa fa-twitter"></i></span>
+            </a>
+          </li>
+          <li class="col icon instagram">
+            <a
+              class="icon-link"
+              href="https://www.instagram.com/centrodeesteticanormamartinez/?hl=es-la"
+            >
+              <span class="tooltip">Instagram</span>
+              <span><i class="fa fa-instagram"></i></span>
+            </a>
+          </li>
+          <li class="col icon whatsapp">
+            <a class="icon-link" href="https://web.whatsapp.com/">
+              <span class="tooltip">WhatsApp</span>
+              <span><i class="fa fa-whatsapp"></i></span>
+            </a>
+          </li>
+        </ul>
+        <figure class="text-center footer-figura">
+          <blockquote class="blockquote">
+            <p class="titulo h1">CENTRO DE ESTETICA NORMA MARTINEZ</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Curso Diseño Web
+            <cite title="Source Title">Bootstrap-CoderHouse</cite>
+          </figcaption>
+        </figure>
+      </div>
+    </footer>
 
     <!--script BOOTSTRAP-->
     <script

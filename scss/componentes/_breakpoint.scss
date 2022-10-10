@@ -1,0 +1,84 @@
+/*------------------------BREAKPOINT--------------------------*/
+
+@media (max-width: 992px) {
+  /*--------------------SECCION PROFESIONAL---------------------*/
+  .container-padre {
+    flex-direction: column;
+  }
+  .profesional-fotoperfil {
+    height: 350px;
+    width: 350px;
+  }
+  .col-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .profesional-descripcion1 {
+    text-align: justify;
+    font-size: 20px;
+    padding-top: 10px;
+    margin: 10px;
+  }
+  .profesional-descripcion2 {
+    text-align: justify;
+    font-size: 20px;
+    padding-top: 10px;
+    margin: 10px;
+  }
+  .footer {
+    & p {
+      display: none;
+    }
+  }
+}
+@media (max-width: 768px) {
+  /*--------------------SECCION PROFESIONAL-----------------*/
+  .profesional-descripcion2 {
+    display: none;
+  }
+  /*--------------------SECCION HOME------------------------*/
+  .home-body {
+    background-size: inherit;
+  }
+}
+@media (max-width: 576px) {
+  /*------------------------HOME----------------------------*/
+  .container-texto {
+    width: fit-content;
+    text-align: justify;
+    width: 300px;
+    & h3 {
+      font-size: 1, 5rem;
+    }
+  }
+  .home-logo{
+    height: 75px;
+    width: 145px;
+  }
+  .home-btn{
+    height:50px;
+    width: 150px;
+  }
+  
+  /*--------------------SECCION PROFESIONAL------------------*/
+  .wrapper {
+    width: 90%;
+  }
+  .footer-figura {
+    display: none;
+  }
+  .container-padre {
+    flex-wrap: wrap;
+  }
+  .profesional-fotoperfil {
+    height: 200px;
+    width: 200px;
+  }
+  /*------------------CONTACTOS-------------------------------*/
+  .row-contactos {
+    gap: 25px;
+    justify-content: center;
+  }
+}

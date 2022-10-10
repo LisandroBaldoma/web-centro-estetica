@@ -1,3 +1,4 @@
+
 /*-------------------TITULO SECCIONES-----------------------------------*/
 .titulo__seccion {
   padding: $margin-pading $margin-pading;
@@ -44,11 +45,31 @@
 .col-carrusel {
   margin-bottom: 20px;
 }
-.img-carrusel {
-  height: 500px;
+.acordion-button-personal{
+  
+  &:not(.collapsed){
+    color:black;
+    background-color:$color-principal;    
+  }
+  &:focus{
+    border-color: $color-principal;
+    box-shadow: $box-shadow-form;
+  }
+}
+/*----------------------PRODUCTOS------------------------------------*/
+.card-personal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.row-personal {
+  row-gap: 20px;
+}
+.img {
+  height: 337px;
+  width: 337px;
 }
 
-/*----------------------PRODUCTOS------------------------------------*/
 .row-productos {
   justify-content: center;
 }
@@ -72,63 +93,8 @@
 .container-contactos {
   margin-bottom: $margin-pading;
 }
-
-/*------------------------BREAKPOINT--------------------------*/
-
-@media (max-width: 991.98px) {
-  /*--------------------SECCION PROFESIONAL---------------------*/
-  .container-padre {
-    flex-direction: column;
-  }
-  .profesional-fotoperfil {
-    height: 350px;
-    width: 350px;
-  }
-  .col-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-  }
-  .profesional-descripcion1 {
-    text-align: justify;
-    font-size: 20px;
-    padding-top: 10px;
-    margin: 10px;
-  }
-  .profesional-descripcion2 {
-    text-align: justify;
-    font-size: 20px;
-    padding-top: 10px;
-    margin: 10px;
-  }
-  .footer {
-    & p {
-      display: none;
-    }
-  }
-}
-@media (max-width: 767.98px) {
-  /*--------------------SECCION PROFESIONAL---------------------*/
-  .profesional-descripcion2 {
-    display: none;
-  }
-}
-@media (max-width: 575.98px) {
-  /*--------------------SECCION PROFESIONAL---------------------*/
-  .footer-figura {
-    display: none;
-  }
-  .container-padre {
-    flex-wrap: wrap;
-  }
-  .profesional-fotoperfil {
-    height: 200px;
-    width: 200px;
-  }
-  /*------------------CONTACTOS-------------------*/
-  .row-contactos {
-    gap: 25px;
-    justify-content: center;
-  }
+.form-personal:focus{
+  border-color: $color-principal;
+  box-shadow: $box-shadow-form;
+  
 }

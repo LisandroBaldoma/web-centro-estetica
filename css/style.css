@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 /*---------------------------NAVBAR----------------------------------- */
 .navbar-img {
   width: 200px;
@@ -23,25 +28,47 @@
 
 /*-----------------------------HOME------------------------------------*/
 .home-logo {
-  width: 80%;
   border-radius: 50%;
+}
+
+.container-home {
+  flex-wrap: wrap;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-texto {
+  width: 40%;
+  text-align: center;
 }
 
 .home-body {
   background-image: url(../img/fondo/imagen-fondo-home.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: inherit;
 }
 
 .home-btn {
+  display: flex;
   background-color: rgb(155, 27, 27);
   color: white;
   font-size: 30px;
   text-decoration: none;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
+  height: 100px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition-duration: 0.4s;
 }
 .home-btn:hover {
+  background-color: rgb(28, 117, 28);
   color: white;
 }
 
@@ -95,11 +122,31 @@
   margin-bottom: 20px;
 }
 
-.img-carrusel {
-  height: 500px;
+.acordion-button-personal:not(.collapsed) {
+  color: black;
+  background-color: rgb(240, 229, 229);
+}
+.acordion-button-personal:focus {
+  border-color: rgb(240, 229, 229);
+  box-shadow: 0 0 0 0.25rem rgb(240, 229, 229);
 }
 
 /*----------------------PRODUCTOS------------------------------------*/
+.card-personal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row-personal {
+  row-gap: 20px;
+}
+
+.img {
+  height: 337px;
+  width: 337px;
+}
+
 .row-productos {
   justify-content: center;
 }
@@ -123,101 +170,13 @@
   margin-bottom: 10px;
 }
 
-/*------------------------BREAKPOINT--------------------------*/
-@media (max-width: 991.98px) {
-  /*--------------------SECCION PROFESIONAL---------------------*/
-  .container-padre {
-    flex-direction: column;
-  }
-  .profesional-fotoperfil {
-    height: 350px;
-    width: 350px;
-  }
-  .col-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-  }
-  .profesional-descripcion1 {
-    text-align: justify;
-    font-size: 20px;
-    padding-top: 10px;
-    margin: 10px;
-  }
-  .profesional-descripcion2 {
-    text-align: justify;
-    font-size: 20px;
-    padding-top: 10px;
-    margin: 10px;
-  }
-  .footer p {
-    display: none;
-  }
-}
-@media (max-width: 767.98px) {
-  /*--------------------SECCION PROFESIONAL---------------------*/
-  .profesional-descripcion2 {
-    display: none;
-  }
-}
-@media (max-width: 575.98px) {
-  /*--------------------SECCION PROFESIONAL---------------------*/
-  .footer-figura {
-    display: none;
-  }
-  .container-padre {
-    flex-wrap: wrap;
-  }
-  .profesional-fotoperfil {
-    height: 200px;
-    width: 200px;
-  }
-  /*------------------CONTACTOS-------------------*/
-  .row-contactos {
-    gap: 25px;
-    justify-content: center;
-  }
-}
-/*MIXIN PARA BOTONES*/
-/*BUTTON PRODUCTOS*/
-.boton-secciones {
-  background-color: rgb(240, 229, 229);
-  color: black;
-  border-radius: 5px;
-  padding: 20px 30px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-}
-.boton-secciones:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  background-color: rgb(177, 152, 152);
-  color: black;
-}
-
-/*BUTTON CONTACTOS*/
-.boton-contacto {
-  background-color: rgb(240, 229, 229);
-  color: black;
-  border-radius: 5px;
-  padding: 20px 30px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-}
-.boton-contacto:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  background-color: rgb(177, 152, 152);
-  color: black;
+.form-personal:focus {
+  border-color: rgb(240, 229, 229);
+  box-shadow: 0 0 0 0.25rem rgb(240, 229, 229);
 }
 
 /*-------------------FOOTER-------------------------------------*/
-.footer {
+.footer-container {
   background-color: rgb(240, 229, 229);
   position: relative;
 }
@@ -238,7 +197,7 @@
 .wrapper {
   display: flex;
   list-style: none;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .wrapper .icon {
   position: relative;
@@ -323,6 +282,124 @@
   background: green;
   color: white;
   font-size: 20px;
+}
+
+/*MIXIN PARA BOTONES*/
+/*BUTTON PRODUCTOS*/
+.boton-secciones {
+  background-color: rgb(240, 229, 229);
+  color: black;
+  border-radius: 5px;
+  padding: 20px 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.boton-secciones:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(177, 152, 152);
+  color: black;
+}
+
+/*BUTTON CONTACTOS*/
+.boton-contacto {
+  background-color: rgb(240, 229, 229);
+  color: black;
+  border-radius: 5px;
+  padding: 20px 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.boton-contacto:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(177, 152, 152);
+  color: black;
+}
+
+/*------------------------BREAKPOINT--------------------------*/
+@media (max-width: 992px) {
+  /*--------------------SECCION PROFESIONAL---------------------*/
+  .container-padre {
+    flex-direction: column;
+  }
+  .profesional-fotoperfil {
+    height: 350px;
+    width: 350px;
+  }
+  .col-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .profesional-descripcion1 {
+    text-align: justify;
+    font-size: 20px;
+    padding-top: 10px;
+    margin: 10px;
+  }
+  .profesional-descripcion2 {
+    text-align: justify;
+    font-size: 20px;
+    padding-top: 10px;
+    margin: 10px;
+  }
+  .footer p {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  /*--------------------SECCION PROFESIONAL-----------------*/
+  .profesional-descripcion2 {
+    display: none;
+  }
+  /*--------------------SECCION HOME------------------------*/
+  .home-body {
+    background-size: inherit;
+  }
+}
+@media (max-width: 576px) {
+  /*------------------------HOME----------------------------*/
+  .container-texto {
+    width: fit-content;
+    text-align: justify;
+    width: 300px;
+  }
+  .container-texto h3 {
+    font-size: 1, 5rem;
+  }
+  .home-logo {
+    height: 75px;
+    width: 145px;
+  }
+  .home-btn {
+    height: 50px;
+    width: 150px;
+  }
+  /*--------------------SECCION PROFESIONAL------------------*/
+  .wrapper {
+    width: 90%;
+  }
+  .footer-figura {
+    display: none;
+  }
+  .container-padre {
+    flex-wrap: wrap;
+  }
+  .profesional-fotoperfil {
+    height: 200px;
+    width: 200px;
+  }
+  /*------------------CONTACTOS-------------------------------*/
+  .row-contactos {
+    gap: 25px;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,5 @@
 /*-------------------FOOTER-------------------------------------*/
-
-.footer {
+.footer-container {
   background-color: $color-principal;
   position: relative;
 }
@@ -18,7 +17,8 @@
 .wrapper {
   display: flex;
   list-style: none;
-  justify-content: space-evenly;
+  justify-content: center;
+
 
   & .icon {
     position: relative;
